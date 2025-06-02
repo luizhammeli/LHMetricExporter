@@ -1,0 +1,15 @@
+{
+  "originHash" : "d9830f2bd7e553a6953b42420cf695d010dd1a2ad04af9bb2c6a1701b0ec872f",
+  "pins" : [
+    {
+      "identity" : "lhmetricexporter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/luizhammeli/LHMetricExporter",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5ee12e13ab12aed4abe3c10265e6ab1f81b8699d"
+      }
+    }
+  ],
+  "version" : 3
+}

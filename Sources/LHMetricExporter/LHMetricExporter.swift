@@ -225,7 +225,7 @@ final class RemoteMetricExporter: MetricExporter {
             metricsToExport.append(allMetrics.removeFirst())
         }
 
-        guard let encodedData = try? JSONEncoder().encode(metricsToExport) else { return }
+        guard !metricsToExport.isEmpty, let encodedData = try? JSONEncoder().encode(metricsToExport) else { return }
         httpClient.perform(data: encodedData, to: exportURL)
 
         guard allMetrics.isEmpty else {

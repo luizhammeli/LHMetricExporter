@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		25630EBD2DEBA90F0016B4F3 /* LHMetricExporter in Frameworks */ = {isa = PBXBuildFile; productRef = 25630EBC2DEBA90F0016B4F3 /* LHMetricExporter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		25630E9E2DEBA6C60016B4F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25630EBD2DEBA90F0016B4F3 /* LHMetricExporter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				25630E912DEBA6C40016B4F3 /* SampleApp */,
 				25630EA02DEBA6C60016B4F3 /* SampleAppTests */,
 				25630EAA2DEBA6C60016B4F3 /* SampleAppUITests */,
+				25630EBB2DEBA90F0016B4F3 /* Frameworks */,
 				25630E902DEBA6C40016B4F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				25630EA72DEBA6C60016B4F3 /* SampleAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		25630EBB2DEBA90F0016B4F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = SampleApp;
 			packageProductDependencies = (
+				25630EBC2DEBA90F0016B4F3 /* LHMetricExporter */,
 			);
 			productName = SampleApp;
 			productReference = 25630E8F2DEBA6C40016B4F3 /* SampleApp.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 25630E862DEBA6C40016B4F3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				25630EBA2DEBA76B0016B4F3 /* XCRemoteSwiftPackageReference "LHMetricExporter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 25630E902DEBA6C40016B4F3 /* Products */;
 			projectDirPath = "";
@@ -583,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25630EBA2DEBA76B0016B4F3 /* XCRemoteSwiftPackageReference "LHMetricExporter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/luizhammeli/LHMetricExporter";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25630EBC2DEBA90F0016B4F3 /* LHMetricExporter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25630EBA2DEBA76B0016B4F3 /* XCRemoteSwiftPackageReference "LHMetricExporter" */;
+			productName = LHMetricExporter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25630E872DEBA6C40016B4F3 /* Project object */;
 }
